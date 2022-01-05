@@ -8,7 +8,7 @@ function Header() {
       <header className={styles.header}>
         <div className={styles.header__icon} >
           <Image
-            src="/img/headerIcon/home.png"
+            src="/img/headerIcon/menu.png"
             alt="menu icon"
             loading="eager"
             width={35}

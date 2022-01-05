@@ -7,7 +7,8 @@ const PickupArticle: React.FC<Props> = ({ articles }) => {
     <section className={styles.pickup}>
       <h1 className={styles.article__heading}>PickUp</h1>
       {articles.map((article, index) => {
-        const time = moment(article.publishedAt || moment.now())
+        const time =
+          moment(article.publishedAt || moment.now())
             .fromNow()
             .slice(0, 1) == "a"
             ? 1
@@ -20,7 +21,8 @@ const PickupArticle: React.FC<Props> = ({ articles }) => {
               <div className={styles.article__title}>
                 <p>{article.title}</p>
                 <p className={styles.article__time}>
-                  {time}時間前
+                  {time}
+                  時間前
                 </p>
               </div>
               {article.urlToImage && (

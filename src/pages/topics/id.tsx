@@ -1,4 +1,5 @@
 import Head from "next/head";
+import fetch from "node-fetch";
 import { useRouter } from "next/router";
 import Article from '../../components/article'
 import Nav from '../../components/nav'
@@ -49,7 +50,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { topicArticles, title },
-    revalidate: 60 * 10,
+    revalidate: 60,
   };
 }
 

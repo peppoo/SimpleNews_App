@@ -1,4 +1,8 @@
-// Hederコンポーネントの分上にmarginをとります。
 .main {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
