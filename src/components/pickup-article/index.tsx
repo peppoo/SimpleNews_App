@@ -16,7 +16,7 @@ const PickupArticle: React.FC<Props> = ({ articles }) => {
                 .fromNow()
                 .slice(0, 1);
         return (
-          <a href={article.url} key={index} target="_blank" rel="noreferrerr">
+          <a href={article.url} key={index} target="_blank" rel="noreferrer">
             <article className={styles.article__main}>
               <div className={styles.article__title}>
                 <p>{article.title}</p>
